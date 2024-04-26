@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="css/quiz_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lemon&family=Noto+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="quiz-container" class="tab">
+        <p class="tab"></p>
+        <h2 id="quiz-question">
+            Question tag
+        </h2>
+
+        <ul>
+
+            <li>
+                <input type="radio" class="answer" id="option-a" name="quiz-options">
+                <label for="option-a" id="text_option_a"> Option A</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" id="option-b" name="quiz-options">
+                <label for="option-b" id="text_option_b"> Option B</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" id="option-c" name="quiz-options">
+                <label for="option-c" id="text_option_c"> Option C</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" id="option-d" name="quiz-options">
+                <label for="option-d" id="text_option_d"> Option D</label>
+            </li>
+        </ul>
+
+        <button id="submit">Submit</button>
+        <p class="invisible"></p>
+    </div>
+
+
+    <script src="js/quiz_script.js"></script>
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background: linear-gradient(95deg,#6c5ce7,#FC427B);
+    max-width: 2200px;
+    margin: auto;
+}
+html::-webkit-scrollbar{
+  width:0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:#fff;
+  border-radius: 5rem;
+}
+
+.upper{
+    max-width: 2200px;
+    margin: auto;
+}
+header{
+    font-family: "Fredoka", sans-serif;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    box-shadow: -15px 2px 20px rgb(166, 159, 159);
+  }
+  
+  nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+.search input{
+    width: 400px;
+    height: 40px;
+    background-color: rgb(234, 213, 255);
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.804);
+    font-size: 16px;
+    font-weight: 200;
+}
+.menu, .details, .search{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.menu img, .details img{
+    margin: 0 20px;
+    cursor: pointer;
+}
+.menu svg{
+    cursor: pointer;
+}
+nav p{
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.divisor{
+    height: 1px;
+    background-color: gray;
+}
+
+.main-container{
+    font-family: "Ubuntu", sans-serif;
+    height: 100vh;
+    width: 98vw;
+    background: linear-gradient(95deg,#6c5ce7,#FC427B);
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.course-detail{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 80vw;
+    height: 100vh;
+}
+
+
+.text p{
+    font-size: 40px;
+}
+
+.div {
+    padding: 8px;
+    background-color: white;
+    box-shadow: -15px 20px 30px rgba(70, 57, 57, 0.753);
+    border-radius: 18px;
+    width: 350px;
+    align-items: center;
+    margin: 20px;
+  }
+  .image {
+    border-radius: 10px;
+    width: 100%;
+  }
+  h2 {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 3px;
+    margin: 20px 0;
+    line-height: 1px;
+  }
+  p {
+    color: gray;
+    text-align: left;
+    padding-left: 3px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+  nav a{
+    text-decoration: none;
+  }
+  span {
+    
+    padding: 2px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+  button :hover {
+    background-color: rgb(0, 136, 255);
+    color: aliceblue;
+  }
+  button {
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+    margin-top: 5px;
+    border: 2px;
+    border-radius: 30px;
+    height: 40px;
+    width: 110px;
+    background-color: rgb(234, 213, 255);
+  }
+
+  .side-menu ul a{
+    text-decoration: none;
+    color: #333;
+  }
+
+  .side-menu ul li{
+    font-size: 20px;
+  }
+  .side-menu {
+    font-family: "Fredoka", sans-serif;
+    position: fixed;
+    top: 0px;
+    z-index: 300;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(249, 249, 249);
+    color: rgb(0, 0, 0);
+    transition: left 0.3s ease;
+  }
+  
+  .side-menu .menu-header {
+    padding: 10px;
+    text-align: right;
+  }
+  
+  .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-menu ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .side-menu ul li:hover {
+    font-weight: bold;
+    background-color: rgb(234, 213, 255);
+  }
+  
+  .main-content {
+    margin-left: 250px; 
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .navbar-logo {
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+  }
+
+  
+.main:hover{
+  transform: scale(1.02) ;
+  transition: transform .1s ease-out;
+}
+
+@media screen and (max-width:1100px) {
+  .search input{
+    width: 0%;
+    background-color: white;
+  }
+  .hide{
+    width: 0%;
+    font-size: 0px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  .details img{
+    width: 0px;
+  }
+}
